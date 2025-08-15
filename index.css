@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+body { @apply bg-zinc-50 text-zinc-900; }
+a { @apply text-inherit; }
+.prose :where(a):not(:where([class~="not-prose"] *)) { @apply underline; }
